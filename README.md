@@ -10,8 +10,6 @@ In the flywheel click on either Open with Live Server or Open in Browser.
 
 Your browser will automatically launch the app to its home page.
 
-You can shut down the server by typing Control C in the terminal window where it is running.
-
 ## Built with
 • Javascript <br/>
 • CSS <br/>
