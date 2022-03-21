@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/sjr3cwz.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <h1>4 People</h1>
+          <div class="navbar-header-container">
+            <i class="las la-file-download active"></i>
+            <h5 class="active">Export</h5>
+          </div>
+        </div>
+        <div class='navbar-right'>
+        <div class="navbar-box">
+          <i class="las la-sort-alpha-up initials"></i>
+          <h3>Last Name</h3>
+        </div>
+        <div class="navbar-list navbar-box">
+          <i class="las la-list active"></i>
+          <i class="las la-chart-bar not-active"></i>
+          <i class="las la-map not-active"></i>
+        </div>
+      </div>
+        </nav>
+      </nav>
+      <section class='section-container'>
+        <div class="person">
+          <div class='person-container'>
+            <div class="person-circle"><h5 class='initials'>JC</h5></div>
+            <div class="person-name">
+              <h3>Jake Caputo</h3>
+              <h6>redondo beach, ca</h6>
+            </div>
+          </div>
+            <div class="person-icons">
+              <i class="lar la-envelope active"></i>
+              <i class="las la-phone active rotate"></i>
+              <i class="las la-comment-alt not-active"></i>
+              <i class="las la-map-marker-alt active"></i>
+              <button  data-id='1' class='btn'><i class="las la-angle-down initials"></i></button>
+            </div>
+          </div>
+        <aside class="dropdown hidden" id='1' data-id='1'>
+          <ul>
+            <li><h6>email: <span class='h5-traits'>jake@actionnetwork.org</span></h6></li>
+            <li><h6>phone: <span class='h5-traits'>555.555.5555</span></h6></li>
+            <li><h6>location: <span class='h5-traits'>anywhere</span></h6></li>
+          </ul>
+        </aside>
+        <div class="person">
+          <div class='person-container'>
+            <div class="person-circle"><h5 class='initials'>MG</h5></div>
+            <div class="person-name">
+              <h3>Martha Grant</h3>
+              <h6>henderson, tx</h6>
+            </div>
+          </div>
+            <div class="person-icons">
+              <i class="lar la-envelope not-active"></i>
+              <i class="las la-phone active rotate"></i>
+              <i class="las la-comment-alt active"></i>
+              <i class="las la-map-marker-alt active"></i>
+              <button class='btn' data-id='2'><i class="las la-angle-down initials"></i></button>
+            </div>
+          </div>
+        <aside class="dropdown hidden" data-id='2'>
+          <ul>
+            <li><h6>phone: <span class='h5-traits'>555.555.5555</span></h6></li>
+            <li><h6>comment: <span class='h5-traits'>hello</span></h6></li>
+            <li><h6>location: <span class='h5-traits'>anywhere</span></h6></li>
+          </ul>
+        </aside>
+        <div class="person">
+          <div class='person-container'>
+            <div class="person-circle"><h5 class='initials'>BG</h5></div>
+            <div class="person-name barbara">
+              <h3>Barbara Glaser
+              </h3>
+            </div>
+          </div>
+            <div class="person-icons">
+              <i class="lar la-envelope active"></i>
+              <i class="las la-phone active rotate"></i>
+              <i class="las la-comment-alt not-active"></i>
+              <i class="las la-map-marker-alt not-active"></i>
+              <button data-id='3' class='btn'><i class="las la-angle-down initials"></i></button>
+            </div>
+          </div>
+        <aside class="dropdown hidden" data-id='3'>
+          <ul>
+            <li><h6>email: <span class='h5-traits'>barbara@actionnetwork.org</span></h6></li>
+            <li><h6>phone: <span class='h5-traits'>555.555.5555</span></h6></li>
+          </ul>
+        </aside>
+        <div class="person">
+          <div class='person-container'>
+            <div class="person-circle anjuli"><h5 class='initials'>AC</h5></div>
+            <div class="person-name ">
+              <h3>Anjuli Cameron</h3>
+              <h6>washington, dc</h6>
+            </div>
+          </div>
+            <div class="person-icons">
+              <i class="lar la-envelope active"></i>
+              <i class="las la-phone active rotate"></i>
+              <i class="las la-comment-alt active"></i>
+              <i class="las la-map-marker-alt active"></i>
+              <button data-id='4' class='btn'><i class="las la-angle-down initials"></i></button>
+            </div>
+          </div>
+        <aside class="dropdown hidden" data-id='4'>
+          <ul>
+            <li><h6>email: <span class='h5-traits'>anjuli@actionnetwork.org</span></h6></li>
+            <li><h6>phone: <span class='h5-traits'>555.555.5555</span></h6></li>
+            <li><h6>comment: <span class='h5-traits'>hello</span></h6></li>
+            <li><h6>location: <span class='h5-traits'>anywhere</span></h6></li>
+          </ul>
+        </aside>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

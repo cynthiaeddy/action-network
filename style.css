@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: proxima-nova, sans-serif;
+}
+
+.container {
+  width: 70%;
+  max-width: 960px;
+  background: #eaeef7;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.active {
+  color: #2889f1;
+}
+.not-active {
+  color: rgba(0, 0, 0, 0.1);
+}
+.initials {
+  color: rgba(0, 0, 0, 0.5);
+}
+.circle {
+  color: #47c967;
+}
+.rotate {
+  transform: rotate(-90deg);
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+.navbar-header-container {
+  display: flex;
+  align-items: center;
+  padding: 2px 5px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.navbar-header-container,
+.navbar-box,
+.section-container {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.navbar-header h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+h3 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 600;
+}
+h5,
+.h5-traits {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 0;
+}
+.h5-traits {
+  text-transform: lowercase;
+  letter-spacing: normal;
+  color: black;
+}
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.6rem;
+  line-height: 0.9;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.1em;
+}
+.la-file-download {
+  margin-right: 3px;
+  font-size: 14px;
+}
+.navbar-box {
+  padding: 8px;
+  width: 120px;
+  margin-left: 0.5rem;
+}
+.navbar-box h3 {
+  font-weight: 400;
+  display: inline;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.9rem;
+}
+.navbar-right {
+  display: inline-flex;
+}
+.navbar-list .las {
+  font-size: 24px;
+  margin: 0 3px;
+}
+.las.la-chart-bar {
+  margin: 0;
+}
+.la-sort-alpha-up {
+  padding-left: 8px;
+}
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.person {
+  display: flex;
+  position: relative;
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.person,
+.dropdown {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  margin: 0;
+  justify-content: space-between;
+}
+.person-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-right: 1em;
+}
+.person-circle.anjuli {
+  border: 4px solid #00b342;
+}
+.person-circle h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.person-container {
+  display: flex;
+}
+
+.person-name.barbara {
+  margin-top: 10px;
+}
+
+.person-icons {
+  font-size: 23px;
+}
+
+.la-angle-down {
+  font-size: 18px;
+  margin-left: 1em;
+}
+ul {
+  list-style: none;
+  padding: 1em;
+  display: flex;
+  padding: 0;
+  margin-left: 3px;
+}
+li {
+  margin-right: 2em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+  li {
+    margin-right: 1em;
+  }
+
+  .h5-traits {
+    line-height: 1.3;
+  }
+  ul {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar-right {
+    align-self: end;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: left;
+  }
+  .person {
+    flex-direction: column;
+  }
+  .person-icons {
+    align-self: end;
+  }
+  li {
+    margin-bottom: 3px;
+  }
+}
