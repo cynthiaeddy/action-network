@@ -212,6 +212,7 @@ li {
 @media (max-width: 600px) {
   .navbar {
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .navbar-right {
     align-self: end;
@@ -220,12 +221,8 @@ li {
 @media (max-width: 480px) {
   .container {
     width: 90%;
-    margin-top: 20px;
   }
-  .navbar {
-    flex-direction: column;
-    align-items: left;
-  }
+
   .person {
     flex-direction: column;
   }
